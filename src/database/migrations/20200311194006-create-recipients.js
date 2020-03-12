@@ -7,11 +7,11 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
-      rua: {
+      name: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      telefone: {
+      rua: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -47,6 +47,6 @@ module.exports = {
   },
 
   down: queryInterface => {
-    return queryInterface.dropTable('contacts');
+    return queryInterface.dropTable('recipients');
   },
 };
